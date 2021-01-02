@@ -1,8 +1,8 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import "./listing.css";
-import ReactDOM from "react-dom";
 import book_details from "./book_detail";
 import ListingFragment from "./ListingFragment";
+import BookError from "./BookError";
 
 class Listing extends Component {
 	constructor(props) {
@@ -10,48 +10,49 @@ class Listing extends Component {
 
 		this.state = {
 			input: "",
+			books_found: [],
 		};
+		this.filterTable = this.filterTable.bind(this);
 	}
 
-	filterTable = () => {
-		let tableElements = "";
+	filterTable(input) {
+
+		// Setting necessary variables
+		let matching_books = [];
+
+		// Flush states
+		this.setState({
+			input: "",
+			books_found: []
+		})
+
 		document.querySelector(".container").style.justifyContent = "center";
 		
-		if (this.state.input.length > 0) {
-			document.querySelector(".container").style.justifyContent =
-				"flex-start";
-			tableElements = (
-				<div className="book-not-found">
-					<h3>No such book available</h3>
-					<h5>
-						Tip: Try searching for keywords matching the book name
-						or author name
-					</h5>
-				</div>
-			);
-			const tableHeaders = Object.keys(book_details[0]);
+		if (input.length > 0) {
+			document.querySelector(".container").style.justifyContent = "flex-start";
 
-			let matching_books = book_details.filter((book) => {
+			// Searching books
+			matching_books = book_details.filter((book) => {
 				return (
 					book.author
 						.toLowerCase()
-						.includes(this.state.input.toLowerCase()) ||
+						.includes(input.toLowerCase()) ||
 					book["bookname"]
 						.toLowerCase()
-						.includes(this.state.input.toLowerCase())
+						.includes(input.toLowerCase())
 				);
 			});
-
-			if (matching_books.length > 0) {
-			tableElements = matching_books.map((book, index) => (
-									<ListingFragment bookDetails={book}/>
-			))}
+			
+			// Setting book_found state to matching_books
+			this.setState(() => ({
+				input: input,
+				books_found: matching_books
+			}));
 		}
-
-		ReactDOM.render(<>{tableElements}</>, document.querySelector(".table"));
 	};
 
 	render() {
+
 		return (
 			<div className="container">
 				<form className="form">
@@ -59,23 +60,28 @@ class Listing extends Component {
 						className="search-bar"
 						type="text"
 						placeholder="Search by Book name / Author name"
-						onInput={(event) => {
-							this.setState({ input: event.target.value });
-						}}
 					/>
 					<button
 						className="search-button"
 						type="submit"
 						onClick={(event) => {
 							event.preventDefault();
-							this.filterTable();
+							this.filterTable(document.getElementsByClassName("search-bar")[0].value)
 						}}
 					>
 						Search
 					</button>
 				</form>
-				<div className="table"></div>
+				<div className="table">{
+
+					this.state.books_found.length === 0 && this.state.input.length > 0
+					? <BookError/>
+					: (this.state.books_found.map((book,index) => (
+					<ListingFragment keys={index} bookDetails={book}/>
+				)))
+				}</div>
 			</div>
+			
 		);
 	}
 }

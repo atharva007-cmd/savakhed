@@ -6,9 +6,9 @@ function ListingFragment(props) {
 		<div className="book-container">
 			<img src="https://www.akshardhara.com/35007/asa-mi-asami-p-l-deshpande-mauj-prakashan-buy-marathi-books-online-at-akshardhara.jpg" alt="img-url"></img>
 			<div className="book">
-					<div className="name-style">
-						<p>{props.bookDetails.bookname}</p>
-					</div>
+				<div className="name-style">
+					<p>{props.bookDetails.bookname}</p>
+				</div>
 				<div className="book-details">
 					<div className="author-style">
 						<p className="type-style">Author</p>
