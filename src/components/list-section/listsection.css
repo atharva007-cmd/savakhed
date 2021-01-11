@@ -1,0 +1,31 @@
+table,
+th,
+td {
+	border: 1px solid #cccccc;
+	padding: 10px;
+}
+
+td {
+	text-transform: capitalize;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 1rem;
+}
+
+th {
+	text-transform: capitalize;
+	text-align: start;
+}
+
+table {
+	min-width: 800px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+.table-super {
+	width: 50vw;
+	place-items: center;
+	display: grid;
+	margin-bottom: 25px;
+}
