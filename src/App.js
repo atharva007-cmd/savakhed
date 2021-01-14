@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Listing from "./container/Listing";
 import Details from "./components/details/Details";
 import LekhakList from "./components/LekhakList/LekhakList";
+import Header from "./components/header/Header";
 
 class App extends Component {
 	constructor() {
@@ -42,6 +43,7 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
+				<Header/>
 				{this.state.show === "details" && (
 					<Details
 						bookName="The Alchemist"

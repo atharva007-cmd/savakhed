@@ -94,9 +94,9 @@ class Listing extends Component {
 		return (
 			<div className="container">
 				<div>
-					<div className="logo">
+					{/* <div className="logo">
 						सार्वजनिक वाचनालय <br /> राजगुरूनगर
-					</div>
+					</div> */}
 					<InputSection
 						onInput={(event) =>
 							this.setState({
