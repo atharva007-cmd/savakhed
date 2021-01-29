@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/savakhed/static/css/main.d9926c85.chunk.css",
-    "main.js": "/savakhed/static/js/main.c8de2763.chunk.js",
-    "main.js.map": "/savakhed/static/js/main.c8de2763.chunk.js.map",
-    "runtime-main.js": "/savakhed/static/js/runtime-main.9d29651d.js",
-    "runtime-main.js.map": "/savakhed/static/js/runtime-main.9d29651d.js.map",
-    "static/js/2.a1472f84.chunk.js": "/savakhed/static/js/2.a1472f84.chunk.js",
-    "static/js/2.a1472f84.chunk.js.map": "/savakhed/static/js/2.a1472f84.chunk.js.map",
-    "static/js/3.905d7fc6.chunk.js": "/savakhed/static/js/3.905d7fc6.chunk.js",
-    "static/js/3.905d7fc6.chunk.js.map": "/savakhed/static/js/3.905d7fc6.chunk.js.map",
+    "main.css": "/savakhed/static/css/main.f591c217.chunk.css",
+    "main.js": "/savakhed/static/js/main.c8b50ffb.chunk.js",
+    "main.js.map": "/savakhed/static/js/main.c8b50ffb.chunk.js.map",
+    "runtime-main.js": "/savakhed/static/js/runtime-main.77c8b88c.js",
+    "runtime-main.js.map": "/savakhed/static/js/runtime-main.77c8b88c.js.map",
+    "static/js/2.2d87695c.chunk.js": "/savakhed/static/js/2.2d87695c.chunk.js",
+    "static/js/2.2d87695c.chunk.js.map": "/savakhed/static/js/2.2d87695c.chunk.js.map",
+    "static/js/3.b3093be9.chunk.js": "/savakhed/static/js/3.b3093be9.chunk.js",
+    "static/js/3.b3093be9.chunk.js.map": "/savakhed/static/js/3.b3093be9.chunk.js.map",
     "index.html": "/savakhed/index.html",
-    "static/css/main.d9926c85.chunk.css.map": "/savakhed/static/css/main.d9926c85.chunk.css.map",
-    "static/js/2.a1472f84.chunk.js.LICENSE.txt": "/savakhed/static/js/2.a1472f84.chunk.js.LICENSE.txt",
+    "static/css/main.f591c217.chunk.css.map": "/savakhed/static/css/main.f591c217.chunk.css.map",
+    "static/js/2.2d87695c.chunk.js.LICENSE.txt": "/savakhed/static/js/2.2d87695c.chunk.js.LICENSE.txt",
     "static/media/about.ead10859.svg": "/savakhed/static/media/about.ead10859.svg",
     "static/media/author.1d00666a.svg": "/savakhed/static/media/author.1d00666a.svg",
     "static/media/author2.5ec21070.svg": "/savakhed/static/media/author2.5ec21070.svg",
@@ -20,9 +20,9 @@
     "static/media/search.28b0ad10.svg": "/savakhed/static/media/search.28b0ad10.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9d29651d.js",
-    "static/js/2.a1472f84.chunk.js",
-    "static/css/main.d9926c85.chunk.css",
-    "static/js/main.c8de2763.chunk.js"
+    "static/js/runtime-main.77c8b88c.js",
+    "static/js/2.2d87695c.chunk.js",
+    "static/css/main.f591c217.chunk.css",
+    "static/js/main.c8b50ffb.chunk.js"
   ]
 }
