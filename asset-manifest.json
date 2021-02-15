@@ -1,30 +1,29 @@
 {
   "files": {
-    "main.css": "/savakhed/static/css/main.cb1372da.chunk.css",
-    "main.js": "/savakhed/static/js/main.44d19ceb.chunk.js",
-    "main.js.map": "/savakhed/static/js/main.44d19ceb.chunk.js.map",
-    "runtime-main.js": "/savakhed/static/js/runtime-main.56111159.js",
-    "runtime-main.js.map": "/savakhed/static/js/runtime-main.56111159.js.map",
-    "static/js/2.cb5fb3ce.chunk.js": "/savakhed/static/js/2.cb5fb3ce.chunk.js",
-    "static/js/2.cb5fb3ce.chunk.js.map": "/savakhed/static/js/2.cb5fb3ce.chunk.js.map",
-    "static/js/3.9f1c1ed5.chunk.js": "/savakhed/static/js/3.9f1c1ed5.chunk.js",
-    "static/js/3.9f1c1ed5.chunk.js.map": "/savakhed/static/js/3.9f1c1ed5.chunk.js.map",
+    "main.css": "/savakhed/static/css/main.4669965d.chunk.css",
+    "main.js": "/savakhed/static/js/main.cee506f5.chunk.js",
+    "main.js.map": "/savakhed/static/js/main.cee506f5.chunk.js.map",
+    "runtime-main.js": "/savakhed/static/js/runtime-main.704e6422.js",
+    "runtime-main.js.map": "/savakhed/static/js/runtime-main.704e6422.js.map",
+    "static/js/2.722766e1.chunk.js": "/savakhed/static/js/2.722766e1.chunk.js",
+    "static/js/2.722766e1.chunk.js.map": "/savakhed/static/js/2.722766e1.chunk.js.map",
+    "static/js/3.51e9b99f.chunk.js": "/savakhed/static/js/3.51e9b99f.chunk.js",
+    "static/js/3.51e9b99f.chunk.js.map": "/savakhed/static/js/3.51e9b99f.chunk.js.map",
     "index.html": "/savakhed/index.html",
     "service-worker.js": "/savakhed/service-worker.js",
     "service-worker.js.map": "/savakhed/service-worker.js.map",
-    "static/css/main.cb1372da.chunk.css.map": "/savakhed/static/css/main.cb1372da.chunk.css.map",
-    "static/js/2.cb5fb3ce.chunk.js.LICENSE.txt": "/savakhed/static/js/2.cb5fb3ce.chunk.js.LICENSE.txt",
+    "static/css/main.4669965d.chunk.css.map": "/savakhed/static/css/main.4669965d.chunk.css.map",
+    "static/js/2.722766e1.chunk.js.LICENSE.txt": "/savakhed/static/js/2.722766e1.chunk.js.LICENSE.txt",
     "static/media/about.ead10859.svg": "/savakhed/static/media/about.ead10859.svg",
-    "static/media/author.1d00666a.svg": "/savakhed/static/media/author.1d00666a.svg",
-    "static/media/author2.5ec21070.svg": "/savakhed/static/media/author2.5ec21070.svg",
     "static/media/coming-soon.8dba0f90.jpg": "/savakhed/static/media/coming-soon.8dba0f90.jpg",
     "static/media/left-arrow.aa7c79d1.svg": "/savakhed/static/media/left-arrow.aa7c79d1.svg",
+    "static/media/lekhak.318f1ea1.svg": "/savakhed/static/media/lekhak.318f1ea1.svg",
     "static/media/search.28b0ad10.svg": "/savakhed/static/media/search.28b0ad10.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.56111159.js",
-    "static/js/2.cb5fb3ce.chunk.js",
-    "static/css/main.cb1372da.chunk.css",
-    "static/js/main.44d19ceb.chunk.js"
+    "static/js/runtime-main.704e6422.js",
+    "static/js/2.722766e1.chunk.js",
+    "static/css/main.4669965d.chunk.css",
+    "static/js/main.cee506f5.chunk.js"
   ]
 }
