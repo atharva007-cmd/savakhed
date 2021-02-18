@@ -5,7 +5,7 @@ import { ReactComponent as Arrow } from "./left-arrow.svg";
 function Header() {
 	const setLabel = () => {
 		const href = window.location.href;
-		if (href.includes("lekhaklist")) return "lekhak-list";
+		if (href.includes("lekhaklist")) return "explore by top authors";
 		if (href.includes("lekhakbooks")) return "lekhakbooks";
 		if (href.includes("aboutus")) return "about-us";
 		if (href.includes("details")) return "details";
@@ -52,50 +52,49 @@ function Header() {
 	});
 
 	return (
-		<nav className='nav-bar'>
+		<nav className="nav-bar">
 			{window.location.href.includes("details") ||
 			window.location.href.includes("lekhakbooks") ? (
-				<a onClick={() => window.history.go(-1)} className='back-link'>
-					<div className='back-button'>
+				<a
+					href="#"
+					onClick={() => window.history.go(-1)}
+					className="back-link"
+				>
+					<div className="back-button">
 						<Arrow />
 					</div>
 				</a>
 			) : null}
-			<div className='tabs'>
+			<div className="tabs">
 				<a
-					href='/savakhed/#/search'
+					href="/savakhed/#/search"
 					onClick={() => {
 						onClickHandler("search");
-					}}>
-					<div className='link-placeholders' id='search'>
+					}}
+				>
+					<div className="link-placeholders" id="search">
 						Search
 					</div>
 				</a>
 				<a
-					href='/savakhed/#/lekhaklist'
+					href="/savakhed/#/lekhaklist"
 					onClick={() => {
 						onClickHandler("lekhak-list");
-					}}>
-					<div className='link-placeholders' id='lekhak-list'>
+					}}
+				>
+					<div className="link-placeholders" id="lekhak-list">
 						Authors
 					</div>
 				</a>
 				<a
-					href='/savakhed/#/aboutus'
-					onClick={() => {
-						onClickHandler("about-us");
-					}}>
-					<div className='link-placeholders' id='about-us'>
-						About Us
-					</div>
-				</a>
-				<a
-					href='/#/search'
+					href="/savakhed/#/aboutus"
 					onClick={() => {
 						onClickHandler("about-us");
 					}}
-					id='title-id'>
-					<div className='title'>{setLabel().replace("-", " ")}</div>
+				>
+					<div className="link-placeholders" id="about-us">
+						About Us
+					</div>
 				</a>
 			</div>
 		</nav>
