@@ -33,8 +33,22 @@ class App extends Component {
 		};
 	}
 
+	preventBackButton = () => {
+		console.log("listener added");
+		window.addEventListener("load", function () {
+			window.history.pushState({ noBackExitsApp: true }, "");
+		});
+
+		window.addEventListener("popstate", function (event) {
+			if (event.state && event.state.noBackExitsApp) {
+				window.history.pushState({ noBackExitsApp: true }, "");
+			}
+		});
+	};
+
 	componentDidMount() {
 		const self = this;
+		this.preventBackButton();
 		window.addEventListener(
 			"hashchange",
 			function () {
@@ -69,7 +83,7 @@ class App extends Component {
 
 	render() {
 		return (
-			<div className="App">
+			<div className='App'>
 				<Header url={this.state.show} />
 				{this.state.show === "details" && (
 					<Details bookDetail={this.state.currentDetails} />
